@@ -30,6 +30,8 @@ public class ToggleSettingSlot : MonoBehaviour, IIniting
         OnToggleChanged?.Invoke(m_SettingName, m_Toggle.isOn);
 
         m_ToggleText.text = m_Toggle.isOn ? "Вкл." : "Выкл.";
+
+        Debug.Log($"Changed \"{m_SettingName}\" - {m_Toggle.isOn}");
     }
     #endregion
 }

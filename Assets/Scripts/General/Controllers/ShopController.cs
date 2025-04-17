@@ -59,8 +59,6 @@ namespace ScreenTest.General
 
         private void ClickedSlot(ProductSlot slot)
         {
-            Debug.Log($"Click - {slot.name}");
-
             m_SelectedSlot = slot;
 
             m_ShopPanel.LockPanel();
