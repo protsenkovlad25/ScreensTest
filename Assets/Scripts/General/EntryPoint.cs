@@ -8,6 +8,8 @@ namespace ScreenTest.General
 
         private void Awake()
         {
+            Application.targetFrameRate = 120;
+
             m_MainManager.Init();
         }
     }
